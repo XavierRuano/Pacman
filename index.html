@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pacman</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/registro.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Menu Pacman</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Inicio</a>
+            </li>
+            <li>
+                <a href="#historia" onclick=$("#menu-close").click();>Historia</a>
+            </li>
+            <li>
+                <a href="#reglas" onclick=$("#menu-close").click();>Reglas</a>
+            </li>
+            <li>
+                <a href="#Personajes" onclick=$("#menu-close").click();>Personajes</a>
+            </li>
+            <li>
+                <a href="#pantalla" onclick=$("#menu-close").click();>Pantalla de juegos</a>
+            </li>
+            <li>
+                <a href="#contacto" onclick=$("#menu-close").click();>Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Bienvenidos</h1>
+            <h3>Diversion en Grande</h3>
+            <br>
+            <a href="#pantalla" class="btn btn-dark btn-lg"><b>¡Juega Ahora!</b></a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="historia" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2><b>Un Poco de Historia</b></h2>
+                    <p>Todo el mundo conoce el famoso juego Pac-Man. Lo que no todo el mundo conoce es la leyenda de la historia que originó el famoso juego de Namco. En el año 1976, el astronauta Nikolai Peckmann fue enviado en una misión solitaria a una estación espacial llamada Mission Six (Misión seis), para estudiar los niveles de radiación y las extrañas circunstancias en las que perdieron la vida los cuatro miembros de su última tripulación.</p>
+
+                   <p>Todo transcurrió sin incidencia alguna hasta el tercer día, en el que las transmisiones de Peckmann llegaban a la torre de control de la Tierra entrecortadas, y su voz comenzaba a mostrar delirios y signos de paranoia. Sus mensajes aseguraban que estaban ocurriendo cosas muy extrañas, y que se sentía perseguido en todo momento y comenzaba a pensar que se trataba de los espíritus de los astronautas muertos quienes lo perseguían a lo largo de toda la estación.</p>
+
+                   <p>El programador Don Hodges ha distribuido un parche que, aplicado a la ROM del Pac-Man de MAME, elimina el fallo que dejaba injugable el juego en el nivel 256, y que evitaba que las fases de Pac-Man se sucedieran infinitamente. Parece ser que el error se debía a que el juego intentaba cargar un tipo de fruta que no existía, y las consecuencias eran desastrosas; la mitad izquierda funcionaba normalmente y la derecha mostraba caracteres y símbolos aleatorios.</p>
+
+                   <p>Eliminado el fallo, los enfermos adictos a Pac-Man podrán romper sus récords perfectos y seguir exprimiendo el clásico de Namco hasta que les sangren las manos.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="reglas" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2><b>reglas</b></h2>
+                    <p><b>Vidas</b><br>El juego cuenta con tres vidas, y si usted  pierde uno  cada ves que se topa un fantasma .Usted puede obtener una vida extra durante el juego una vez que llegue a los 10.000 puntos.Si pierdes todas las vidas, el juego ha terminado.</p><br>
+
+                    <p><b>Fruta</b><br>Una fruta aparece después de comer 70 puntos de bonificación y luego otra vez después de mas de 100. Una planta tiene una cereza que vale 100 puntos. </p><br>
+
+                    <p><b>Los fantasmas</b><br>Blinky (rojo) y Pinky (rosado) te perseguirán, mientras Inky (verde) y Clyde (naranja)  se mueven al azar. Velocidad Blinky aumenta a medida que usted come más puntos.</p><br>
+
+                    <p><b>Los pellets de poder</b><br>La alimentación de pellets es desactivar  temporal  mentes los fantasmas azules y se puede comer en ese momento. El primer fantasma que se come le da 200 puntos, y esto se duplica cada vez hasta el último el  fantasma le da década de 1600. La cantidad de tiempo que los fantasmas siguen siendo azules se acorta cada nivel.</p>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+        </div>
+    </aside>
+
+    <!-- Portfolio -->
+    <section id="personajes" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2><b>Personajes</b></h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/clide.png">
+                                </a>
+                                <p><b>Clide</b><br>El fantasma naranja es el último en salir a la caza, es el fantasma tímido. Su modo normal posee dos fases que se alternan de acuerdo a su cercanía con Pac-Man: si se encuentra a más de ocho casillas, actúa igual que Blinky; si está a menos, se comporta como si estuviera en el modo de dispersión, yendo hacia la esquina inferior izquierda de la pantalla.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/inky.png">
+                                </a>
+                                <p><b>inky</b><br>El fantasma azul es el más calculador y, a la vez, impredecible. Permanece en la casa de los fantasmas hasta que Pac-Man haya consumido al menos 30 puntos. Una vez afuera, utiliza para orientarse tanto la posición de Pac-Man como la de Blinky: si imaginamos una línea A-B entre Blinky y Pac-Man, Inky se dirigirá hacia un punto C que completa esa misma línea, donde la distancia B-C es igual a A-B.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/pinky.png">
+                                </a>
+                                <p><b>Pinky</b><br>El fantasma rosado es el encargado de cortar el camino a Pac-Man; siempre intenta interceptarlo calculando hacia dónde irá en lugar de dónde está, dirigiéndose hacia un punto situado cuatro casillas adelante de su posición actual.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/xavier.png">
+                                </a>
+                                <p><b>Blinky</b><br>El fantasma rojo es el único que comienza fuera de la casa de los fantasmas y tiene la personalidad más “cazadora” de todos: inmediatamente se dirige hacia la posición de Pac-Man y sostiene este comportamiento todo el tiempo, aunque a veces su corta vista le haga tomar el camino más largo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <a href="#" class="btn btn-dark">View More Items</a>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>The buttons below are impossible to resist.</h3>
+                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                </div>
+            </div>
+        </div>
+    </aside>-->
+
+    <!-- Map -->
+
+    <section id="pantalla" class="tablero">
+       
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <script type="text/javascript" src="js/comentarios.js"></script>
+        <script type="text/javascript" src="js/validar.js"></script>
+        <body>
+ <form class="form-horizontal" id="contacto" >
+ <fieldset>
+ <!-- Form Name -->
+ <legend>Contactenos</legend>
+ <!-- Text input-->
+ <div class="form-group">
+ <label class="col-md-4 control-label"
+for="textnombre">Nombre</label>
+ <div class="col-md-4">
+ <input id="textnombre" name="textnombre" type="text"
+placeholder="Nombre" class="form-control input-md">
+ <span class="help-block">Ingrese su nombreo o nickname</span>
+ </div>
+ </div>
+ <!-- Select Basic -->
+ <div class="form-group">
+ <label class="col-md-4 control-label" for="selectbasic">Pais</label>
+ <div class="col-md-4">
+ <select id="selectbasic" name="selectbasic" class="form-control">
+ <option value="El Salvador">El Salvador</option>
+ <option value="Guatemala">Guatemala</option>
+ <option value="Costa Rica">Costa Rica</option>
+ <option value="Honduras">Honduras</option>
+ <option value="Nicaragua">Nicaragua</option>
+ <option value="Panama">Panama</option>
+ </select>
+ </div>
+ </div>
+<div class="form-group">
+<label class="col-md-4 control-label" for="selectbasic">Correo: </label>
+<div class="col-md-4">
+<input id="correo" type="email" name="Correo" placeholder="usuario@email.com" class="form-control input-md">
+</div>   
+</div>
+
+ <!-- Textarea -->
+ <div class="form-group">
+ <label class="col-md-4 control-label"
+for="textcontenido">Comentario</label>
+ <div class="col-md-4">
+ <textarea class="form-control" id="textcontenido"
+name="textcontenido"></textarea>
+ </div>
+ </div>
+ <!-- Button -->
+ <div class="form-group">
+ <label class="col-md-4 control-label" for="singlebutton"></label>
+ <div class="col-md-4">
+ <input type="button" id="btncomentar" name="btncomentar" onclick="return validar()"
+class="btn btn-primary" value="Comentar" >
+ </div>
+ </div>
+ </fieldset>
+ </form>
+ <div id="Comentarios" class="container">
+ <h1>Comentarios sobre el Juego:</h1>
+ </div>
+ 
+ </body>
+    
+
+</body>
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    /*
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+   /* var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler); */
+    </script>
+</html>
